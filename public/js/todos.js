@@ -11,6 +11,22 @@ fetch('http://localhost:3000/todos')
     })
     
 }
+// Anoter way to GET the things from backend
+// function getTodos() {
+//     fetch('http://localhost:3000/todos'
+//     , {
+//         method: 'GET',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             todo: todo ,
+//         })
+//     })
+//         .then(function(response) {
+//             return response.json();
+//         })
+// }
 
 function loopTodos(todos){
    todos.forEach(function(todo) {
